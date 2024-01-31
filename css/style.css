@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+body{
+    margin-inline: auto;
+    max-width: 1440px;
+    background-color:white;
+    border: 2px solid red;
+
+}
+
+.nav-bar{
+    background-color:white;
+    border: 2px solid yellow;
+}
