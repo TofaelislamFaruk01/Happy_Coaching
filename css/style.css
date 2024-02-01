@@ -87,8 +87,6 @@ p, li {
     background-color: #FAF8F6;
     
   }
-
-  
   .success_life-container {
    
       display: grid;
@@ -101,10 +99,7 @@ p, li {
   }
   
   .life-container-details {
-    /* border: 2px solid red; */
-    /* flex: 1; */
     padding: 20px;
-    /* background-color: #f0f0f0; */
     padding-bottom: 0;
   }
 
@@ -319,6 +314,54 @@ p, li {
     padding: 10px 60px;
     margin: 20px 0 40px 0;
   }
+
+  /*  ------- free guide--------- */
+
+  .free_guide{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+  .guide-details{
+    padding: 10px;
+  }
+  .guide-btn{
+    margin: 10px;
+    padding: 15px 70px;
+    border-radius:15px;
+
+  }
+  .guide-details h1{
+    font-weight:800;
+    font-size: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* margin: 5px 0; */
+
+  }
+  .guide-img{
+    position: relative;
+  }
+
+  .guide-img img{
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  #toast{
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #20AD96;
+    padding: 30px 5px;
+    border-radius: 50%;
+    right: 25px;
+    top: -48px;
+  }
  
   
   
@@ -459,6 +502,26 @@ p, li {
             padding: 5px 10px;
           }
         
+
+          /* -----------------------------guide */
+
+          .free_guide{
+            
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 50px;
+            margin: 30px 5px;
+          }
+          .guide-details{
+           
+            padding: 10px;
+          }
+          .guide-details h1{          
+            font-size: 30px;
+          }
+          #toast{
+            right: 1%;
+            top: -42px;
+          }
 
 
   }
