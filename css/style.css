@@ -1,6 +1,11 @@
+/*-----------------------
+         for all
+ ------------------------ */
+
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 
 body{
+    margin-block: 0;
     margin-inline: auto;
     max-width: 1440px;
     background-color:white;
@@ -8,12 +13,218 @@ body{
 
 }
 
-.nav-bar{
-    background-color:white;
-    border: 2px solid yellow;
+p{
+    color: #4A556C;
+    font-size: 18;
 }
 
-.success_life{
-    background-color: #FAF8F6;
+.btn {
+    padding: 10px 20px;
+    background-color: #20AD96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+   font-weight: 600;
+   font-size: 14px;
+  }
+
+  .d-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+/* -----------navbar section--------- */
+  
+  .navbar {
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 2px solid lawngreen;
-}
+    margin-inline: 60px;
+    max-width: 1200px;
+    
+  }
+  
+  .nav_icon img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+  }
+
+  /* ------------ navbar section end */
+
+  /* -- success_life section  -- */
+
+  .success_life{
+    padding: 30px;
+    background-color: #FAF8F6;
+    
+  }
+
+  
+  .success_life-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px;
+    margin-bottom: 0;
+  }
+  
+  .life-container-details {
+    border: 2px solid red;
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    padding-bottom: 0;
+  }
+
+  .container-details{
+    padding: 30px;
+  }
+
+  h1{
+    font-weight: 800;
+    font-size: 72px;
+    color: #333461;
+    margin-block: 2px;
+
+  }
+
+  p{
+    margin-block: 3px;
+  }
+
+  #prove-1{
+    opacity: 0.5;
+  }
+  #prove-2{
+    font-size: 18px;
+  }
+  .success_life-btn{
+    font-weight: 400;
+    margin-top: 8px;
+    padding-inline: 40px;
+    border-radius:10px ;
+  }
+  
+  .life-container-img {
+    flex: 1;
+  }
+  
+  
+  .life-container-img img {
+  position: relative;
+  top: 40px;
+   margin-left: 40px;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .success-card{
+    border: 2px solid rgb(38, 35, 32);
+    background-color: #FFFFFF;
+    max-width: 180px;
+    /* display: flex; */
+    padding: 10px 5px;
+    position:absolute;
+    
+    z-index: 1;
+    right: 540px;
+   
+  }
+  p{
+    font-size: 12px;
+  }
+  #rate{
+    color: #333461;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  /* -- success_life section end  -- */
+
+
+  /*-------- particular area section   */
+  
+ 
+  
+  
+  
+
+
+  /* ------------ media query for mobile devices--------------------------- */
+  
+  @media screen and (max-width: 600px) {
+
+    /*--------- navbar section------------ */
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-container {
+      width: 100%;
+      padding-block: 10px;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-btn{
+        margin-block: 10px;
+    }
+    /* ----------------------nav bar end------------- */
+
+
+    /* new */
+   
+        .success_life-container {
+          flex-direction: column;
+        }
+      
+        .life-container-details, .life-container-img {
+          width: 100%;
+          padding: 0;
+        }
+
+        .container-details h1{
+            font-size: 30px;
+        }
+
+        .success-card{
+            /* position:static ;
+            /* z-index: 0; */
+            /* align-items: center;
+            justify-content: center; */ 
+        }
+      
+  }
+ 

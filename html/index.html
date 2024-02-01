@@ -3,55 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Happy Coaching</title>
 </head>
 <body>
     <head>
-
-        <!-- navbar section  -->
-        <nav class="nav-bar">
-            <div>
-                <img src="/icons/Happy.svg" alt="" srcset="">
+         <!-- navbar section  -->
+        <nav class="navbar">
+            <div class="nav_icon">
+              <img src="/icons/Happy.svg" alt="">
             </div>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About us</li>
-                    <li>Extra Salespage</li>
+            <div class="nav-container">
+                <ul class="nav-links">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Extra Salespage</a></li>
                 </ul>
-                <button>Get your free guide now</button>
-            </div>
-        </nav>
+                <button class="btn nav-btn">Get your free guide now</button>
+              </div>
+            </nav>
 
     </head>
     <main>
 
         <!-- success_life section  -->
+        
 
         <section class="success_life">
             <img src="/icons/Vector.svg" alt="" srcset="">
-            <div>
-                <img src="/icons/protection-target 1.svg" alt="" srcset="">
-                <p><span>100%</span> <br> success rate this year </p>
-            </div>
-            <div>
-                <div>
-                    <p>Proven strategies backed by science for success.</p>
+            
+            <div class="success_life-container">
+                <div class="life-container-details">
+                    <div class="container-details">
+                        <p id="prove-1">Proven strategies backed by science for success.</p>
                     <h1>
                         Live life at the <br> full potential
                     </h1>
-                    <p>I help people to discover their true potential and live a fulfilling life...
-                        Discover the simple 3 steps that I discovered to hack productivity. It just works and it is begin using backed by science. Wanna transform your life?</p>
-                        <button>Get your free guide now</button>
+                    <p>I help people to discover their true potential and live a fulfilling life... </p>
+                        <p>Discover the simple 3 steps that I discovered to hack</p> 
+                        <p>productivity. It just works and it is begin using backed by science.</p>
+                        <p>Wanna transform your life?</p>
+                        <button class="btn success_life-btn">Get your free guide now</button>
+                    </div>
                 </div>
-                <div>
-                    <img src="/images/pexels-andrea-piacquadio-3978564 1.png" alt="" srcset="">
-                </div>
-            </div>
+                 <div>
+                    <div class="success-card d-flex">
+                        <img src="/icons/protection-target 1.svg" alt="" srcset="">
+                        <p><span id="rate">100%</span> <br> success rate this year </p>
+                    </div>
+                    <div class="life-container-img">
+                        <img class="success_life-images" src="/images/pexels-andrea-piacquadio-3978564 1.png" alt="" srcset="">
+                    </div>
+                 </div>
+              </div>
+            
 
         </section>
+
+        <!-- ---------------------- -->
+       
 
         <!-- particular area section  -->
 
