@@ -83,7 +83,7 @@ p, li {
   /* -- success_life section  -- */
 
   .success_life{
-    padding: 30px;
+    padding: 50px 30px;
     background-color: #FAF8F6;
     
   }
@@ -91,19 +91,19 @@ p, li {
    
       display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
+        column-gap: 100px;
        
-    max-width: 1200px;
-    margin: 50px;
+     /* max-width: 1200px; */
+    margin: 30px 50px ; 
     margin-bottom: 0;
   }
   
   .life-container-details {
-    padding: 20px;
     padding-bottom: 0;
   }
 
   .container-details{
+    margin-top: 30px;
     padding: 30px;
   }
 
@@ -133,16 +133,12 @@ p, li {
     border-radius:10px ;
   }
   
-  .life-container-img {
-    /* flex: 1; */
-  }
-  
-  
+ 
   .life-container-img img {
   position: relative;
   top: 40px;
    margin-left: 40px;
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -152,10 +148,11 @@ p, li {
   }
 
   .success-card{
-    border: 2px solid rgb(38, 35, 32);
+    /* border: 2px solid rgb(38, 35, 32); */
     background-color: #FFFFFF;
     max-width: 180px;
-    padding: 10px 5px;
+    padding: 10px 20px;
+    column-gap: 5px;
     position:absolute;
     z-index: 1;
    left: -50px;
@@ -362,7 +359,45 @@ p, li {
     right: 25px;
     top: -48px;
   }
- 
+
+  /* ------------------online section--------- */
+
+
+   .online-section{
+    max-width: 1280px;
+    margin: 20px auto;
+   }
+
+   .online-container {
+    display: flex;
+    background-color: #FAF8F6;
+    border-radius: 10px;
+    padding-top: 30px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.online-details{
+  margin: 48px 0 0 72px ;
+  
+}
+   .online-details h1{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    }
+   .online-details p{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight:400;
+    opacity: 0.5;
+    }
+    .online-btn{
+      padding: 10px 70px;
+      border-radius: 10px;
+    }
+
+
   
   
   
@@ -412,13 +447,19 @@ p, li {
           margin-bottom: 30px;
           /* text-align: center; */
           margin: 5px;
-          row-gap: 5px;
+          row-gap: 30px;
           padding: 0;
         }
       
         .life-container-details, .life-container-img {
           width: 100%;
           padding: 0;
+        }
+        .life-container-img img{
+          margin: 0;
+        }
+        .container-details{
+          padding: 5px;
         }
 
         .container-details h1{
@@ -428,6 +469,7 @@ p, li {
         .success-card{
             top: 0;
             left: 0;
+            padding: 5px;
         }
 
         
@@ -518,10 +560,31 @@ p, li {
           .guide-details h1{          
             font-size: 30px;
           }
+          .guide-img img{
+            margin-left:31px;
+          }
           #toast{
             right: 1%;
             top: -42px;
           }
+
+
+
+
+          /* online section */
+
+          .online-container {
+            flex-direction: column;
+        }
+        .online-details {
+          margin: 20px;
+      }
+
+      .online-img img{
+        width: 90%;
+        margin: 10px;
+        padding:0 10px;
+      }
 
 
   }
