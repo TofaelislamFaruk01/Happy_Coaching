@@ -11,13 +11,9 @@ body{
     max-width: 1440px;
     background-color:white;
     font-family: 'Kumbh Sans', sans-serif;
-    /* border: 2px solid red; */
-
 }
 
 p, li ,h1 , h3 {
-    /* color: #4A556C; */
-    /* font-size: 18px; */
     font-family: 'Kumbh Sans', sans-serif;
     list-style: none;
 }
@@ -493,7 +489,8 @@ p, li ,h1 , h3 {
   
 /* ---------------------media query------------------------------------ */
 
-@media screen and (max-width: 1100px) {
+@media (min-width:701px) and
+  (max-width: 1100px) {
 
   /*--------- navbar section------------ */
   .navbar {
